@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: #242424;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow: break-word;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 900;
+    color: #000;
+}
+
+wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+main{
+    display: block;
+    background-color: #fff;
+}
+
+.container{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section.module p{
+    margin-bottom: 40px;
+}
+
+section.module:last-child{
+    margin-bottom: 0;
+}
+
+section.module h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+section.module.content{
+    padding: 40px 0;
+    background: #ece7d5;
+}
+
+section.module.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+section.module.parallax::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+    background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+    background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+    background: -o-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+}
+
+section.module.parallax-1{
+    background-image: url("https://imagens.usp.br/wp-content/uploads/Vista-do-Pico-do-Jaragua_Foto-Marcos-Santos_U0Y9926-1536x1024.jpg");
+}
+
+section.module.parallax-2{
+    background-image: url("https://img.freepik.com/fotos-gratis/foto-de-alto-angulo-de-uma-bela-paisagem-ao-por-do-sol-na-cidade-de-nova-york-eua_181624-42898.jpg?w=826&t=st=1673917142~exp=1673917742~hmac=d2aeb9b9a7dc8ce07e025d084c6b21c1b617e590363e0bf29a09ea69e539c4c5");
+}
+
+section.module.parallax-3{
+    background-image: url("https://img.freepik.com/fotos-gratis/foto-de-alto-angulo-dos-arranha-ceus-a-noite-em-nova-york-eua_181624-49912.jpg?w=740&t=st=1673917214~exp=1673917814~hmac=dc1e3c117078c4ba8a2441bfbd00d783985b0c5b92df97c5111a1141bc3bb058");
+}
+
+section.module.parallax h1{
+    color: #fff;
+    text-align: center;
+    font-size: 55px;
+    z-index: 50;
+    text-transform: uppercase;
+}
